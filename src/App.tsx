@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import './App.css';
+import './assets/App.scss';
 
-function App() {
+export default function App():ReactElement {
   return (
-    <div>
-      <p>Anime List</p>
+    <div className="row">
+      <div className="col-md-6">
+        <p>Anime</p>
+      </div>
+      <div className="col-md-6 ">
+        <p>List</p>
+      </div>
     </div>
   );
 }
-
-export default App;
