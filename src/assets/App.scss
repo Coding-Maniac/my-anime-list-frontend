@@ -1,1 +1,19 @@
 @import '~bootstrap/scss/bootstrap';
+
+.app_header{
+  .app_search_input{
+    width: 80%;
+    margin-left: auto;
+    transition: all 0.3s ease-in-out;
+    &:focus,
+    &:focus-within{
+      width: 100%;
+    }
+  }
+  .app_search_list{
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+}
